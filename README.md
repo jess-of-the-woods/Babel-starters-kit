@@ -1,6 +1,8 @@
 ## Babel Starter Kit
 Based on the '[Babel on the Client](http://code.tutsplus.com/courses/start-coding-es6-with-babel/lessons/babel-on-the-client)' - Tutorial
 
+https://github.com/tutsplus/start-coding-es6-with-babel
+
 ### Modules
 - babel
 - babelify
