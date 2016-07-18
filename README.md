@@ -20,3 +20,5 @@ write a gulp file which will resolve dependencies, stitch it all together.. and 
 use standard js for gulpfile
 
 run build task with: `gulp build` in command line.
+
+with default task defined in gulpfile, run with `gulp` in command line. This will run copy, build & watch tasks. See comments in gulpfile.

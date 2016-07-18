@@ -15,3 +15,15 @@ gulp.task('build', function(){
   .pipe(source('app.bundle.js'))
   .pipe(gulp.dest('./dist')); // set destination folder.. pipe to it
 });
+
+gulp.task('copy', function(){
+  gulp.src('client/index.html') // the thing we want to copy
+  .pipe(gulp.dest('./dist')); // where we are copying it to (destination)
+})
+
+gulp.task('watch', function(){
+  gulp.watch('client/**/*.js', ['build']);
+  gulp.watch('client/*.html', ['copy']);
+});
+
+gulp.task('default', ['copy', 'build', 'watch']);
